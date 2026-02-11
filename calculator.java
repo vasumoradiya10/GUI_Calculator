@@ -3,14 +3,14 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Calculator extends JFrame implements ActionListener {
+public class calculator extends JFrame implements ActionListener {
 
     private final JTextField display;
     private double firstOperand = 0;
     private String operator = "";
     private boolean isNewCalculation = true;
 
-    public Calculator() {
+    public calculator() {
         setTitle("Swing Calculator");
         setSize(400, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -126,7 +126,7 @@ public class Calculator extends JFrame implements ActionListener {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            new Calculator().setVisible(true);
+            new calculator().setVisible(true);
         });
     }
 }
